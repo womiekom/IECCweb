@@ -257,7 +257,7 @@ export default function ProblemSection() {
               <div className="flex items-start gap-2 p-3 rounded-xl bg-city-sand/60 text-xs font-sans text-city-charcoal-700 mb-2">
                 <Info size={16} className="shrink-0 mt-0.5 text-city-indigo-500" />
                 <span>
-                  <strong>Methodological Note:</strong> Findings from specific research studies reflect their respective surveyed samples and geographic boundaries (e.g., Universitas Indonesia TransJakarta corridor audit, ITB commuter survey, BMC 6-district national study, and ILO national labor statistics). They illustrate structural systemic barriers rather than an identical singular experience for all persons with disabilities.
+                  <strong>Methodological Note:</strong> Findings reflect the specific scopes and surveyed boundaries of each source (e.g., ITDP Indonesia municipal transit evaluation, UNTIRTA bus stop audit, BMC 6-district national study across Indonesia, and BPS national labor statistics). They illustrate structural systemic barriers rather than an identical singular experience for all persons with disabilities.
                 </span>
               </div>
 

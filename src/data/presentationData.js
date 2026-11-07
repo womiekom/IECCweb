@@ -43,27 +43,27 @@ export const problemData = {
   description: "Accessibility is not a niche requirement—it is a fundamental civic right. Across transportation, healthcare, and employment, physical, informational, and systemic barriers frequently hinder independent participation in daily city life.",
   stats: [
     {
-      number: "66%",
-      label: "TransJakarta Stop Accessibility",
-      detail: "Overall accessibility compliance across 64 evaluated disability-friendly bus stops. Guiding blocks met only 36% compliance.",
-      sourceShort: "Prasetyo (2022) • Universitas Indonesia",
-      sourceKey: "prasetyo2022",
+      number: "144",
+      label: "TransJakarta Stop Inclusivity",
+      detail: "Inclusive features expanded to 144 TransJakarta bus stops in 2024, yet implementations still require adjustments and broader disability involvement.",
+      sourceShort: "ITDP Indonesia (Dec 2024)",
+      sourceKey: "itdp2024",
       color: "teal"
     },
     {
       number: "50%",
       label: "Healthcare Access Rate",
-      detail: "While 98% of surveyed persons with physical and sensory disabilities required healthcare, only 50% accessed health facilities.",
+      detail: "Multi-district Indonesian survey: 98% of surveyed persons with physical and sensory disabilities needed healthcare, but only 50% accessed health facilities.",
       sourceShort: "Fanda et al. (2026) • BMC Health Serv Res (6 ID Districts)",
       sourceKey: "fanda2026",
       color: "sage"
     },
     {
-      number: "18.7%",
-      label: "Formal & Informal Employment",
-      detail: "Employment rate for persons with disabilities in Indonesia. 91% work in the informal sector, compared to 81% of the general population.",
-      sourceShort: "ILO (2023/2025) • Inclusive Employment Services",
-      sourceKey: "ilo2025",
+      number: "72.84%",
+      label: "Informal Employment Disparity",
+      detail: "72.84% of employed persons with disabilities work in the informal sector, compared to 57.68% for those without disabilities across Indonesia.",
+      sourceShort: "BPS Indonesia (2025) • Sakernas Labor Statistics",
+      sourceKey: "bps2025",
       color: "terracotta"
     }
   ],
@@ -72,29 +72,30 @@ export const problemData = {
       id: "transit",
       focusArea: "Accessible Public Transportation",
       title: "Discontinuous Paths & Transit Boarding Obstacles",
-      summary: "For persons with disabilities, inaccessible public transport can make ordinary journeys significantly more difficult. Incomplete guiding blocks, missing or steep curb ramps, irregular vehicle-to-platform gaps, and insufficient multimodal wayfinding require commuters to spend disproportionate travel time and planning for basic movement.",
+      summary: "For persons with disabilities in Jakarta, public transport accessibility has made progress but critical gaps persist. While inclusive features expanded to 144 bus stops in 2024 (ITDP), supplementary field audits show universal design implementation at only 47%, with 126 of 249 stops still not classified as disability-friendly (UNTIRTA).",
       badge: "Transportation Barrier",
       color: "teal",
       keyMetrics: [
-        { label: "Overall Stop Accessibility", value: "66%" },
-        { label: "Guiding Block Compliance", value: "36%" },
-        { label: "Signs & Markings", value: "45%" },
-        { label: "Ramp Infrastructure", value: "71%" }
+        { label: "Inclusive Stops (2024)", value: "144 stops" },
+        { label: "Universal Design Met", value: "47%" },
+        { label: "Friendly Stops (Audit)", value: "118 / 249" },
+        { label: "Under Revitalization", value: "5 stops" }
       ],
-      impact: "Disrupted independent mobility, longer commute times, and reliance on advance planning for routine trips.",
-      sources: ["prasetyo2022", "fitri2024"]
+      impact: "Disrupted independent mobility, requiring ongoing adjustments, field retrofits, and active involvement of the disability community.",
+      sources: ["itdp2024", "untirta2024"]
     },
     {
       id: "healthcare",
       focusArea: "Inclusive Healthcare Services",
       title: "Communication Gaps & Multi-Sensory Service Friction",
-      summary: "Healthcare accessibility extends far beyond physical entrance doors. In crowded community clinics, patients frequently confront audio-only calling systems that exclude deaf and hard-of-hearing individuals, complex interior wayfinding with low visual contrast, and limited alternative communication channels between patients and medical personnel.",
+      summary: "Healthcare accessibility extends far beyond physical entrance doors. In a multi-district Indonesian study, 98% of people with disabilities reported needing healthcare, but only 50% accessed facilities due to inaccessible communication, audio-only queue systems, and informational barriers.",
       badge: "Healthcare Barrier",
       color: "sage",
       keyMetrics: [
         { label: "Reported Care Need", value: "98%" },
         { label: "Actual Access Rate", value: "50%" },
-        { label: "Study Sample (Indonesia)", value: "2,666 respondents" }
+        { label: "Surveyed Sample", value: "2,666 respondents" },
+        { label: "Survey Scope", value: "6 ID Districts" }
       ],
       impact: "Missed clinical triage, delayed medical treatment, and communication anxiety for patients.",
       sources: ["fanda2026"]
@@ -102,57 +103,58 @@ export const problemData = {
     {
       id: "employment",
       focusArea: "Equal Employment Opportunities",
-      title: "Inflexible Evaluation & Unaccommodated Workplaces",
-      summary: "Employment barriers persist across every stage of the professional journey—from standard recruitment tests that assess presence rather than capability, to workspaces lacking step-free access, screen reader compatibility, or adjustable setups. Talented individuals are frequently pushed into informal or precarious work.",
+      title: "Inflexible Evaluation & Disparities in Job Formality",
+      summary: "National labor data reflects a pronounced disparity in employment formality and working opportunities rather than an outright absence of work. Inflexible recruitment screenings and workplace barriers push a disproportionate share of workers with disabilities into informal arrangements.",
       badge: "Employment Barrier",
       color: "terracotta",
       keyMetrics: [
-        { label: "Employment Rate", value: "18.7%" },
-        { label: "Women with Disabilities", value: "13.5%" },
-        { label: "Informal Sector Share", value: "91%" }
+        { label: "Informal Work (Disabled)", value: "72.84%" },
+        { label: "Informal Work (Non-Disabled)", value: "57.68%" },
+        { label: "Formality Gap", value: "+15.16%" },
+        { label: "Data Scope", value: "BPS National (2025)" }
       ],
-      impact: "Underutilization of skilled potential and persistent informal sector concentration.",
-      sources: ["ilo2025"]
+      impact: "Concentration in precarious informal jobs, reduced legal protections, and underutilization of skilled talent.",
+      sources: ["bps2025"]
     }
   ]
 };
 
 export const researchSources = [
   {
-    key: "prasetyo2022",
+    key: "itdp2024",
     focus: "Public Transportation",
-    citation: "Prasetyo, H. N. (2022). Analisis dan Evaluasi Aksesibilitas Penyandang Difabel Fisik dan Sensorik di Halte Bus Transjakarta. Universitas Indonesia, Faculty of Public Health.",
-    year: "2022",
-    scope: "Examined 64 TransJakarta stops identified as disability-friendly across 12 corridors.",
-    findings: "Reported fulfillment rates: Overall accessibility 66%, Guiding blocks 36%, Signs and markings 45%, Ramps 71%.",
-    url: "https://lib.fkm.ui.ac.id/detail?id=135942&lokasi=lokal"
+    citation: "ITDP Indonesia (December 2024). The Next Steps Towards an Inclusive Public Transportation in Jakarta.",
+    year: "2024",
+    scope: "Evaluation of inclusive public transportation progress across the TransJakarta network in Jakarta.",
+    findings: "Inclusive features expanded to 144 TransJakarta bus stops in 2024. However, some implementations still required adjustments, and broader public awareness and disability involvement remained important.",
+    url: "https://itdp-indonesia.org/2024/12/the-next-steps-towards-an-inclusive-public-transportation-in-jakarta/"
   },
   {
-    key: "fitri2024",
-    focus: "Public Transportation",
-    citation: "Fitri, H. (2024). Commuting Behaviors of People with Disabilities and the Implications for Transport Planning and Policy: A Preliminary Study. Journal of Regional and City Planning, ITB.",
+    key: "untirta2024",
+    focus: "Public Transportation (Supplementary)",
+    citation: "Universitas Sultan Ageng Tirtayasa (UNTIRTA) (2024). Implementation of Universal Design on TransJakarta Bus Stops and Buses. Undergraduate Research Thesis.",
     year: "2024",
-    scope: "Surveyed 51 commuters with motor and sensory disabilities in the Jakarta Metropolitan Area.",
-    findings: "Found that commuters with disabilities tended to spend more time commuting and often planned journeys extensively in advance due to infrastructure unpredictability.",
-    url: "https://doi.org/10.5614/jpwk.2024.35.2.1"
+    scope: "Supplementary undergraduate evaluation of 249 TransJakarta bus stops and fleet universal design (May 2024 data).",
+    findings: "118 of 249 stops were classified as disability-friendly, 126 were not, and 5 were undergoing revitalization. Universal design implementation was reported at 47%.",
+    url: "https://eprints.untirta.ac.id/45013/"
   },
   {
     key: "fanda2026",
     focus: "Healthcare",
     citation: "Fanda, R. B., et al. (2026). Achieving universal health coverage with disability inclusion: a household survey analyzing healthcare access and national health insurance utilization for individuals with disabilities in Indonesia. BMC Health Services Research, 26, 760.",
-    year: "2026",
-    scope: "Surveyed 2,666 individuals with physical and sensory disabilities across six districts in Indonesia (labeled as national Indonesian research).",
-    findings: "98% indicated a clear need for healthcare services, but only 50% successfully accessed health facilities. Critical barriers involving physical accessibility, communication, and financial capacity persisted.",
+    year: "2026 (Data: 2024)",
+    scope: "Multi-district Indonesian household survey across six districts in Indonesia (not Jakarta-specific). Sample: 2,666 individuals with physical and sensory disabilities.",
+    findings: "98% reported needing healthcare services, but only 50% accessed healthcare facilities. Significant physical, communicative, and financial access barriers were identified.",
     url: "https://doi.org/10.1186/s12913-026-14572-5"
   },
   {
-    key: "ilo2025",
+    key: "bps2025",
     focus: "Employment",
-    citation: "International Labour Organization (29 September 2025). Indonesia paves the way for inclusive employment services. Based on ILO 2023 statistics.",
+    citation: "Badan Pusat Statistik (BPS) Indonesia (2025). Proporsi Lapangan Kerja Informal Menurut Status Disabilitas (Sakernas). Table 8.3.1.",
     year: "2025",
-    scope: "National labor market assessment in Indonesia analyzing employment distribution for persons with disabilities.",
-    findings: "18.7% of persons with disabilities were employed (13.5% among women with disabilities). 91% of employed persons with disabilities worked in the informal sector, compared with 81% of the general population.",
-    url: "https://www.ilo.org/resource/news/indonesia-paves-way-inclusive-employment-services"
+    scope: "National labor statistics across Indonesia measuring employment formality and opportunities by disability status.",
+    findings: "72.84% of employed people with disabilities worked in the informal sector, compared to 57.68% of employed people without disabilities, demonstrating a persistent disparity in employment formality.",
+    url: "https://www.bps.go.id/id/statistics-table/2/MjY1MSMy/8-3-1-proporsi-lapangan-kerja-informal-menurut-status-disabilitas.html"
   }
 ];
 
