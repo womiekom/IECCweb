@@ -55,7 +55,7 @@ export default function PresentationNav({ activeSection, setActiveSection }) {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className={`relative px-4 py-2 text-xs sm:text-sm font-heading font-semibold tracking-wide transition-all duration-300 cursor-pointer ${
+                className={`relative px-4 py-2 text-xs sm:text-sm font-heading font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                   isActive
                     ? scrolled
                       ? 'text-city-teal-700'

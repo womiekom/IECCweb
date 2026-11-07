@@ -102,7 +102,7 @@ export default function GameWorksSection() {
             </span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             {currentArea.title}
           </h2>
         </div>
@@ -121,7 +121,7 @@ export default function GameWorksSection() {
                     : 'text-white/70 hover:text-white'
                 }`}
               >
-                Scene View
+                Braille Translation
               </button>
               <button
                 onClick={() => setActiveLayer('secondary')}
@@ -131,7 +131,6 @@ export default function GameWorksSection() {
                     : 'text-white/70 hover:text-white'
                 }`}
               >
-                <Layers size={13} />
                 <span>{currentArea.secondaryLabel}</span>
               </button>
             </div>
@@ -194,7 +193,7 @@ export default function GameWorksSection() {
           
           {/* LEFT: Compact Video with Clean Crisp Border (NO CARD) */}
           <div className="w-full md:w-[360px] lg:w-[400px] shrink-0">
-            <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-white/40 shadow-[0_12px_40px_rgba(0,0,0,0.7)] bg-black group">
+            <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-white/50 shadow-[0_12px_40px_rgba(0,0,0,0.7)] bg-black group">
               <video
                 ref={videoRef}
                 key={currentArea.videoSrc}
@@ -245,7 +244,7 @@ export default function GameWorksSection() {
           <div className="flex-1 flex flex-col justify-center space-y-4">
             
             {/* ONE Concise Explanatory Sentence */}
-            <p className="font-display font-medium text-xl sm:text-2xl lg:text-3xl text-white leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
+            <p className="font-display font-bold text-xl sm:text-2xl lg:text-3xl text-white leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] tracking-wide">
               “{currentArea.explanatorySentence}”
             </p>
 
@@ -253,12 +252,12 @@ export default function GameWorksSection() {
             <div className="pt-2">
               <button
                 onClick={() => setActiveIndex(currentArea.nextAreaIndex)}
-                className={`inline-flex items-center px-6 py-2.5 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 cursor-pointer ${
+                className={`inline-flex items-center px-6 py-2.5 rounded-xl font-heading font-bold text-xs uppercase tracking-wider text-white roblox-btn-3d transition-all duration-300 shadow-lg cursor-pointer ${
                   currentArea.themeColor === 'teal'
-                    ? 'bg-city-teal-500 hover:bg-city-teal-400 shadow-city-teal-500/30'
+                    ? 'bg-city-teal-500 hover:bg-city-teal-400'
                     : currentArea.themeColor === 'sage'
-                      ? 'bg-city-sage-500 hover:bg-city-sage-400 shadow-city-sage-500/30'
-                      : 'bg-city-terracotta-500 hover:bg-city-terracotta-400 shadow-city-terracotta-500/30'
+                      ? 'bg-city-sage-500 hover:bg-city-sage-400'
+                      : 'bg-city-terracotta-500 hover:bg-city-terracotta-400'
                 }`}
               >
                 <span>{currentArea.buttonLabel}</span>

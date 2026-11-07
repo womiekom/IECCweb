@@ -35,23 +35,23 @@ export default function CinematicHero({ onExploreClick }) {
           />
         </div>
 
-        {/* Tagline */}
-        <p className="font-display font-medium text-xl sm:text-3xl text-city-sand mb-4 max-w-2xl drop-shadow-[0_2px_15px_rgba(0,0,0,0.7)]">
+        {/* Tagline with Blocky Display Font */}
+        <p className="font-display text-2xl sm:text-4xl text-city-sand mb-4 max-w-2xl drop-shadow-[0_2px_15px_rgba(0,0,0,0.85)] tracking-wide leading-tight">
           {projectMeta.tagline}
         </p>
 
         {/* Natural Narrative Description */}
-        <p className="font-sans text-sm sm:text-base text-slate-200/90 max-w-xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)] font-light mb-8">
+        <p className="font-sans text-sm sm:text-base text-slate-200/90 max-w-xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)] mb-8">
           {projectMeta.description}
         </p>
 
-        {/* Action button */}
+        {/* Action button with 3D tactile block press */}
         {onExploreClick && (
           <button
             onClick={onExploreClick}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-city-teal-500 hover:bg-city-teal-400 text-white font-heading font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-city-teal-500/30 hover:scale-105 active:scale-95 cursor-pointer"
+            className="relative inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-city-teal-500 hover:bg-city-teal-400 text-white font-heading text-xs uppercase tracking-wider roblox-btn-3d cursor-pointer select-none"
           >
-            Explore the Presentation
+            <span>Explore the Presentation</span>
           </button>
         )}
 

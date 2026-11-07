@@ -36,11 +36,11 @@ export default function ClosingSection() {
         <div className={`max-w-4xl mx-auto text-center mb-16 cartoony-slide-up ${
           isVisible ? 'cartoony-active' : ''
         }`}>
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl md:text-6xl text-white tracking-tight leading-tight mb-8">
+          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl text-white tracking-wide leading-tight mb-8">
             “{closingData.title}”
           </h2>
 
-          <p className="font-sans text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="font-sans text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             {closingData.description}
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function ClosingSection() {
           <div className="flex items-center gap-4">
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white font-heading font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer"
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-heading text-xs uppercase tracking-wider roblox-btn-3d transition-all cursor-pointer"
             >
               <span>Back to Top</span>
               <ArrowUp size={14} />

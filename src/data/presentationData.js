@@ -33,6 +33,7 @@ export const navigationLinks = [
   { id: "problem", label: "The Problem" },
   { id: "solution", label: "Our Solution" },
   { id: "game-works", label: "How It Works" },
+  { id: "how-ai-works", label: "How AI Works" },
   { id: "closing", label: "Project Vision" }
 ];
 
@@ -216,11 +217,11 @@ export const showcaseAreas = [
     explanatorySentence: "Making healthcare services more accessible through inclusive communication and patient-centered interactions.",
     buttonLabel: "Mission 01 — Healthcare Without Barriers",
     themeColor: "sage",
-    bgImage: "/assets/screenshots/NurseFriendly.png",
+    bgImage: "/assets/screenshots/BrailleTranslation.png",
     bgAlt: "Clinic reception desk with Nurse NPC offering Braille Information and Sign Language communication options",
-    secondaryImage: "/assets/screenshots/BrailleTranslation.png",
-    secondaryLabel: "Braille Translation",
-    secondaryAlt: "In-game Braille translation popup: Front Desk Information Sign reading 'Please wait for your number.'",
+    secondaryImage: "/assets/screenshots/SignLanguage.png",
+    secondaryLabel: "Sign Language",
+    secondaryAlt: "In-game Sign Language communication option with Nurse NPC",
     videoSrc: "/assets/videos/Nurse.mp4",
     posterSrc: "/assets/screenshots/NurseFriendly.png",
     nextAreaIndex: 2
@@ -247,4 +248,90 @@ export const closingData = {
   badge: "Project Vision",
   title: "Accessibility should be built into the city, not left for individuals to overcome.",
   description: "Jakarta For All is an interactive 3D simulation built in Roblox Studio for the IECC 2026 National Stage. By turning real-world accessibility data into immersive urban scenarios, we demonstrate how inclusive design principles create a city that welcomes and empowers every resident."
+};
+
+export const aiWorkflowData = {
+  badge: "OUR DEVELOPMENT PROCESS",
+  title: "HOW AI WORKS",
+  description: "AI supported our development process from early-stage planning to implementation and refinement. Different tools were used for different stages, while the project's direction, decisions, and final outcomes remained human-guided.",
+  tools: [
+    {
+      id: "tool-01",
+      number: "TOOL 01",
+      name: "GPT-5.6 (Luna)",
+      codename: "Luna",
+      role: "Brainstorming, Planning & Technical Guidance",
+      tagline: "Strategic Ideation & Conceptual Roadmap",
+      logo: "/assets/images/chatgpt_logo.svg",
+      logoType: "svg",
+      accentColor: "teal", // matching existing palette
+      badgeColor: "bg-city-teal-50 text-city-teal-700 border-city-teal-300",
+      accentBorder: "border-city-teal-400 shadow-[0_6px_0_0_#2A9D8F]",
+      iconBg: "bg-city-teal-600 text-white",
+      summary: "GPT-5.6, referred to as Luna during the development process, supported the early and strategic stages of development.",
+      contributions: [
+        {
+          title: "Brainstorming & Ideation",
+          desc: "Exploring concepts, generating ideas, and evaluating possible approaches."
+        },
+        {
+          title: "Project Planning",
+          desc: "Structuring the project's objectives, features, missions, and development roadmap."
+        },
+        {
+          title: "Technical Research",
+          desc: "Exploring suitable technologies, tools, frameworks, and technical approaches."
+        },
+        {
+          title: "System Design",
+          desc: "Discussing implementation strategies, gameplay logic, architecture, and technical requirements."
+        },
+        {
+          title: "Problem Analysis",
+          desc: "Evaluating alternatives and helping identify potential limitations before implementation."
+        }
+      ]
+    },
+    {
+      id: "tool-02",
+      number: "TOOL 02",
+      name: "Antigravity + Gemini 3.8 Flash",
+      role: "Code Development, Implementation & Debugging",
+      tagline: "Component Engineering & Rapid Implementation",
+      logo: "/assets/images/antigravity_logo.png",
+      logoType: "img",
+      accentColor: "blue",
+      badgeColor: "bg-city-blue-50 text-city-blue-700 border-city-blue-300",
+      accentBorder: "border-city-blue-400 shadow-[0_6px_0_0_#3B82C4]",
+      iconBg: "bg-city-blue-600 text-white",
+      summary: "Antigravity, powered by Gemini 3.8 Flash in the development workflow, supported the practical implementation and refinement stages.",
+      contributions: [
+        {
+          title: "Code Development",
+          desc: "Assisting with writing and developing website components and code."
+        },
+        {
+          title: "Implementation",
+          desc: "Translating planned features and technical directions into working implementations."
+        },
+        {
+          title: "Debugging",
+          desc: "Identifying errors, investigating unexpected behavior, and suggesting fixes."
+        },
+        {
+          title: "Code Refinement",
+          desc: "Improving existing implementations and helping resolve technical issues."
+        }
+      ]
+    }
+  ],
+  workflowSteps: [
+    { step: "01", name: "IDEATION", tool: "GPT-5.6 (Luna)", color: "teal" },
+    { step: "02", name: "PLANNING", tool: "GPT-5.6 (Luna)", color: "teal" },
+    { step: "03", name: "TECHNICAL GUIDANCE", tool: "Collaborative", color: "sage" },
+    { step: "04", name: "DEVELOPMENT", tool: "Antigravity + Gemini 3.8", color: "blue" },
+    { step: "05", name: "DEBUGGING", tool: "Antigravity + Gemini 3.8", color: "blue" },
+    { step: "06", name: "REFINEMENT", tool: "Human & AI Feedback", color: "teal" }
+  ],
+  concludingStatement: "AI helped us think, plan, build, and refine — but the vision, creative direction, and final decisions remained human-guided."
 };
